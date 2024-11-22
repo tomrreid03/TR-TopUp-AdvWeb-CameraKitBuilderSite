@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Body Selection</title>
+    <link rel="stylesheet" href="/retail pages/camerabodyshop.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+    <header>
+        <div class="logo">Hot Shoe. <br> Cold Shoe.</div>
+        <nav>
+            <a href="#">Community</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="register">Register</button>
+        </div>
+    </header>
+
+    <section class="camera-selection">
+        <h1>Select a Camera Body</h1>
+        <div class="filters">
+            <div class="filter-group">
+                <h3>Brands</h3>
+                <ul>
+                    <li><input type="radio" name="brand" value="Canon"> Canon</li>
+                    <li><input type="radio" name="brand" value="Lumix"> Lumix</li>
+                    <li><input type="radio" name="brand" value="Sony"> Sony</li>
+                    <li><input type="radio" name="brand" value="Fujifilm"> Fujifilm</li>
+                    <li><input type="radio" name="brand" value="Nikon"> Nikon</li>
+                    <li><input type="radio" name="brand" value="Leica"> Leica</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <input type="range" min="500" max="10000" step="100" id="price-range">
+                <p>Price: £<span id="price-display">500</span>+</p>
+            </div>
+
+            <div class="filter-group">
+                <h3>Sensor Size</h3>
+                <ul>
+                    <li><input type="checkbox" value="Full Frame"> Full Frame</li>
+                    <li><input type="checkbox" value="APS-C"> APS-C</li>
+                    <li><input type="checkbox" value="Micro Four Thirds"> Micro Four Thirds</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Sensor Megapixels</h3>
+                <ul>
+                    <li><input type="checkbox" value="20-24 MP"> 20-24 MP</li>
+                    <li><input type="checkbox" value="24-36 MP"> 24-36 MP</li>
+                    <li><input type="checkbox" value="36+ MP"> 36+ MP</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Stills Resolution</h3>
+                <ul>
+                    <li><input type="checkbox" value="4K"> 4K</li>
+                    <li><input type="checkbox" value="8K"> 8K</li>
+                </ul>
+            </div>
+
+            <div class="filter-group">
+                <h3>Video Resolution</h3>
+                <ul>
+                    <li><input type="checkbox" value="4K"> 4K</li>
+                    <li><input type="checkbox" value="8K"> 8K</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="camera-list">
+            <h2>Available Cameras</h2>
+            <div id="camera-results">
+                <p>No results yet. Adjust your filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <a href="https://www.flaticon.com/authors/surang/flat?author_id=275" title="photo camera icons">icons by surang on flaticon</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const priceRange = document.getElementById('price-range');
+        const priceDisplay = document.getElementById('price-display');
+        priceRange.addEventListener('input', () => {
+            priceDisplay.textContent = priceRange.value;
+        });
+    </script>
+</body>
+</html>

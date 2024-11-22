@@ -1,0 +1,200 @@
+/* General Resets, Main reference */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Makes NAV stay */
+nav {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+/* Style auth buttons ACTUALLY NAV Buttons */
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width: 120px;
+    text-align: center;
+}
+
+.auth-buttons img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* Hero banner, logo, title, build kit button */
+.hero {
+    background-color: #fbb1ab;
+    text-align: center;
+    padding: 2% 5%;
+}
+
+.hero img {
+    width: 200px;
+    height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.cta {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Product Grid - premade kit lists */
+.products {
+    padding: 1% 25px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-card img {
+    width: 100px;
+    height: 30px;
+    max-width: 100%;
+    object-fit: scale-down;
+}
+
+.product-card {
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Footer parts */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-social img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 150px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-column ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.auth-section, .profile, .kit-builder {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.auth-section input, .auth-section button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.kit-builder .builder-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

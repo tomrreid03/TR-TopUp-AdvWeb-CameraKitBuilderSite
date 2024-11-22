@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Builder</title>
+    <link rel="stylesheet" href="kitbuilderstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Hot Shoe. <br> Cold Shoe.</div>
+        <nav>
+            <a href="#">Community</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="register">Register</button>
+            
+        </div>
+    </header>
+
+    <section class="kit-builder">
+        <div class="compatibility-checker">
+            <p id="compatibility-status" style="color: rgb(0, 155, 46);">Compatibility: All items are compatible.</p>     <!-- NEEDS to be conditionally formatted, script. -->
+
+
+            <p id="kit-weight">Estimated Kit Weight: <span>0</span> kg</p>          <!-- Value NEEDS to be acumulated when user enters items -->
+
+
+        </div>
+
+        <div class="builder-container">
+            <div class="builder-item">
+                <span>Camera Body:</span>
+                <button id="select-camera" onclick="navigateTo('camerabodyshop.html')">Select Camera Body</button> <!-- Builder Items need to fill kit masterlist as they're added -->
+            </div>
+
+            <div class="builder-item">
+                <span>Camera Lens:</span>
+                <button id="select-lens" onclick="navigateTo('camera-lens.html')">Select Lens</button>
+            </div>
+
+            <div class="builder-item">
+                <span>Memory Cards:</span>
+                <button id="select-memory" onclick="navigateTo('memory-cards.html')">Select Memory Cards</button>
+            </div>
+
+            <div class="builder-item">
+                <span>Batteries:</span>
+                <button id="select-batteries" onclick="navigateTo('batteries.html')">Select Batteries</button>
+            </div>
+
+            <div class="builder-item">
+                <span>Lens Filters:</span>
+                <button id="select-filters" onclick="navigateTo('lens-filters.html')">Select Filters</button>
+            </div>
+
+            <div class="builder-item">
+                <span>Tripods:</span>
+                <button id="select-tripods" onclick="navigateTo('tripods.html')">Select Tripods</button>
+            </div>
+
+            <div class="builder-item">
+                <span>Drone:</span>
+                <button id="select-drone" onclick="navigateTo('drone.html')">Select Drone</button>
+            </div>
+        </div>
+
+        <div class="total-cost">
+            <h3>Total Cost: £<span id="total-cost">0.00</span></h3> <!-- Value NEEDS to be acumulative depending on list contents, SCRIPT -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                    <a href="https://www.flaticon.com/authors/surang/flat?author_id=275" title="photo camera icons">icons by surang on flaticon</a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

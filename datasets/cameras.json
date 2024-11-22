@@ -1,0 +1,22 @@
+[
+    {
+      "CameraName": "Canon EOS R5",
+      "Brand": "Canon",
+      "Price": 3800,
+      "SensorSize": "Full Frame",
+      "SensorMegapixels": 45,
+      "StillsResolution": "8K",
+      "VideoResolution": "8K"
+    },
+    {
+      "CameraName": "Canon EOS R6",
+      "Brand": "Canon",
+      "Price": 2500,
+      "SensorSize": "Full Frame",
+      "SensorMegapixels": 20,
+      "StillsResolution": "4K",
+      "VideoResolution": "4K"
+    }
+    
+  ]
+  
