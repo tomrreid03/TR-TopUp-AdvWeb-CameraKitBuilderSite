@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kit Builder</title>
-    <link rel="stylesheet" href="kitbuilderstyle.css">
+    <link rel="stylesheet" href="kit-builder-style.css">
 </head>
 <body>
     <header>
         <div class="logo">Hot Shoe. <br> Cold Shoe.</div>
         <nav>
-            <a href="#">Community</a>
+
         </nav>
         <div class="auth-buttons">
             <button class="sign-in">Sign in</button>
@@ -26,44 +26,34 @@
 
             <p id="kit-weight">Estimated Kit Weight: <span>0</span> kg</p>          <!-- Value NEEDS to be acumulated when user enters items -->
 
-
         </div>
 
         <div class="builder-container">
             <div class="builder-item">
                 <span>Camera Body:</span>
-                <button id="select-camera" onclick="navigateTo('camerabodyshop.html')">Select Camera Body</button> <!-- Builder Items need to fill kit masterlist as they're added -->
+                <button id="select-camera" onclick="navigateTo('shops-camera-body.html')">Select Camera Body</button> <!-- Builder Items need to fill kit masterlist as they're added -->
             </div>
 
             <div class="builder-item">
                 <span>Camera Lens:</span>
-                <button id="select-lens" onclick="navigateTo('camera-lens.html')">Select Lens</button>
+                <button id="select-lens" onclick="navigateTo('shopss-lens.html')">Select Lens</button>
             </div>
 
             <div class="builder-item">
                 <span>Memory Cards:</span>
-                <button id="select-memory" onclick="navigateTo('memory-cards.html')">Select Memory Cards</button>
-            </div>
-
-            <div class="builder-item">
-                <span>Batteries:</span>
-                <button id="select-batteries" onclick="navigateTo('batteries.html')">Select Batteries</button>
+                <button id="select-memory" onclick="navigateTo('shops-cards.html')">Select Memory Cards</button>
             </div>
 
             <div class="builder-item">
                 <span>Lens Filters:</span>
-                <button id="select-filters" onclick="navigateTo('lens-filters.html')">Select Filters</button>
+                <button id="select-filters" onclick="navigateTo('shops-lens-filters.html')">Select Filters</button>
             </div>
 
             <div class="builder-item">
                 <span>Tripods:</span>
-                <button id="select-tripods" onclick="navigateTo('tripods.html')">Select Tripods</button>
+                <button id="select-tripod" onclick="navigateTo('shops-tripods.html')">Select Tripod</button>
             </div>
 
-            <div class="builder-item">
-                <span>Drone:</span>
-                <button id="select-drone" onclick="navigateTo('drone.html')">Select Drone</button>
-            </div>
         </div>
 
         <div class="total-cost">
