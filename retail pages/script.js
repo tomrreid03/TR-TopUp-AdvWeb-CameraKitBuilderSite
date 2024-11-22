@@ -11,14 +11,14 @@ document.addEventListener("DOMContentLoaded", () => {
         videoResolution: []
     };
 
-    // Fetch the cameras dataset
+    // Fetch the cameras dataset (.json)
     fetch('cameras.json')
         .then(response => response.json())
         .then(cameras => {
-            // Display cameras
+            // Display cameras script
             updateCameraList(cameras);
 
-            // Add event listeners for filters
+            // Add event listeners for filters?
             document.querySelectorAll('input[name="brand"]').forEach(input => {
                 input.addEventListener("change", () => {
                     filters.brand = input.value;
