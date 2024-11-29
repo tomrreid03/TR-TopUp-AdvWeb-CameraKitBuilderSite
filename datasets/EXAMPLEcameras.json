@@ -6,7 +6,8 @@
       "SensorSize": "Full Frame",
       "SensorMegapixels": 45,
       "StillsResolution": "8K",
-      "VideoResolution": "8K"
+      "VideoResolution": "8K",
+      "LensMountType": "RF"
     },
     {
       "CameraName": "Canon EOS R6",
@@ -15,7 +16,8 @@
       "SensorSize": "Full Frame",
       "SensorMegapixels": 20,
       "StillsResolution": "4K",
-      "VideoResolution": "4K"
+      "VideoResolution": "4K",
+      "LensMountType": "RF"
     }
     
   ]
