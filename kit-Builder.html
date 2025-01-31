@@ -10,7 +10,8 @@
     <header>
         <div class="logo">Hot Shoe. <br> Cold Shoe.</div>
         <nav>
-
+            <a href="index.html">Home</a>
+            <a href="kit-builder.html">Kit Builder</a>
         </nav>
         <div class="auth-buttons">
             <button class="sign-in">Sign in</button>
@@ -31,26 +32,31 @@
         <div class="builder-container">
             <div class="builder-item">
                 <span>Camera Body:</span>
-                <button id="select-camera" onclick="navigateTo('shops-camera-body.html')">Select Camera Body</button> <!-- Builder Items need to fill kit masterlist as they're added -->
+                <div id="selected-camera" class="selected-item"></div>
+                <button id="select-camera" onclick="navigateTo('shops-camera-body.html')">Select Camera Body</button>
             </div>
 
             <div class="builder-item">
                 <span>Camera Lens:</span>
-                <button id="select-lens" onclick="navigateTo('shopss-lens.html')">Select Lens</button>
+                <div id="selected-lens" class="selected-item"></div>
+                <button id="select-lens" onclick="navigateTo('shops-lens.html')">Select Lens</button>
             </div>
 
             <div class="builder-item">
                 <span>Memory Cards:</span>
+                <div id="selected-memory" class="selected-item"></div>
                 <button id="select-memory" onclick="navigateTo('shops-cards.html')">Select Memory Cards</button>
             </div>
 
             <div class="builder-item">
                 <span>Lens Filters:</span>
+                <div id="selected-filters" class="selected-item"></div>
                 <button id="select-filters" onclick="navigateTo('shops-lens-filters.html')">Select Filters</button>
             </div>
 
             <div class="builder-item">
                 <span>Tripods:</span>
+                <div id="selected-tripod" class="selected-item"></div>
                 <button id="select-tripod" onclick="navigateTo('shops-tripods.html')">Select Tripod</button>
             </div>
 
@@ -77,9 +83,83 @@
     </footer>
 
     <script>
+        const kitItems = {
+            camera: null,
+            lens: null,
+            memory: null,
+            filters: null,
+            tripod: null
+        };
+
+        function updateSelectedItems() {
+            // Update camera display
+            const selectedCamera = document.getElementById('selected-camera');
+            if (kitItems.camera) {
+                selectedCamera.innerHTML = `
+                    <strong>${kitItems.camera.name}</strong><br>
+                    Price: £${kitItems.camera.price.toLocaleString()}<br>
+                    Weight: ${kitItems.camera.weight}g<br>
+                    Mount: ${kitItems.camera.mount}
+                `;
+            } else {
+                selectedCamera.innerHTML = '';
+            }
+
+            // Update other items (similar structure for when implemented)
+            ['lens', 'memory', 'filters', 'tripod'].forEach(type => {
+                const element = document.getElementById(`selected-${type}`);
+                if (kitItems[type]) {
+                    element.innerHTML = `
+                        <strong>${kitItems[type].name}</strong><br>
+                        Price: £${kitItems[type].price.toLocaleString()}<br>
+                        Weight: ${kitItems[type].weight}g
+                    `;
+                } else {
+                    element.innerHTML = '';
+                }
+            });
+        }
+
+        function updateCalculations() {
+            // Calculate total cost
+            const total = Object.values(kitItems).reduce((acc, item) => acc + (item?.price || 0), 0);
+            document.getElementById('total-cost').textContent = total.toFixed(2);
+
+            // Calculate total weight
+            const weight = Object.values(kitItems).reduce((acc, item) => acc + (item?.weight || 0), 0);
+            document.querySelector('#kit-weight span').textContent = (weight/1000).toFixed(1);
+        }
+
+        function checkCompatibility() {
+            const statusElement = document.getElementById('compatibility-status');
+            if (kitItems.camera && kitItems.lens) {
+                const cameraMount = kitItems.camera.mount;
+                const lensMount = kitItems.lens.mount;
+                
+                if (cameraMount === lensMount) {
+                    statusElement.textContent = "Compatibility: All items are compatible.";
+                    statusElement.style.color = "#009b2e";
+                } else {
+                    statusElement.textContent = "Compatibility Warning: Lens mount mismatch!";
+                    statusElement.style.color = "#ff0000";
+                }
+            }
+        }
+
         function navigateTo(page) {
             window.location.href = page;
         }
+
+        // Initialize from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedKit = localStorage.getItem('kitItems');
+            if (savedKit) {
+                Object.assign(kitItems, JSON.parse(savedKit));
+                updateSelectedItems();
+                updateCalculations();
+                checkCompatibility();
+            }
+        });
     </script>
 </body>
 </html>

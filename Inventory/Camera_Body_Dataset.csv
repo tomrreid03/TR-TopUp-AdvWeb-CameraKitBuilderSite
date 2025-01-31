@@ -1,0 +1,31 @@
+Model,Brand,Sensor Size,Megapixels,Stills Resolution,Video Resolution,Price ($),Mount
+Canon EOS R5,Canon,Full Frame,45,8192x5464,8K,3899,RF-Mount
+Canon EOS R6,Canon,Full Frame,20,5472x3648,4K,2499,RF-Mount
+Canon EOS R7,Canon,APS-C,32,6960x4640,4K,1399,RF-S-Mount
+Canon EOS RP,Canon,Full Frame,26,6240x4160,4K,999,RF-Mount
+Canon EOS R3,Canon,Full Frame,24,6000x4000,6K,5999,RF-Mount
+Sony A7 IV,Sony,Full Frame,33,7008x4672,4K,2498,L-Mount
+Sony A7S III,Sony,Full Frame,12,4240x2832,4K,3499,L-Mount
+Sony FX3,Sony,Full Frame,12,4240x2832,4K,3998,L-Mount
+Sony A1,Sony,Full Frame,50,8640x5760,8K,6498,L-Mount
+Sony A9 II,Sony,Full Frame,24,6000x4000,4K,4499,L-Mount
+Nikon Z9,Nikon,Full Frame,45,8256x5504,8K,5496,Z-Mount
+Nikon Z7 II,Nikon,Full Frame,45,8256x5504,4K,2999,Z-Mount
+Nikon Z6 II,Nikon,Full Frame,24,6048x4024,4K,1996,Z-Mount
+Nikon Z5,Nikon,Full Frame,24,6016x4016,4K,1399,Z-Mount
+Nikon Zfc,Nikon,APS-C,21,5568x3712,4K,956,Z-Mount
+Fujifilm X-T4,Fujifilm,APS-C,26,6240x4160,4K,1699,X-Mount
+Fujifilm GFX 100S,Fujifilm,Medium Format,102,11648x8736,4K,5999,G-Mount
+Fujifilm X-T5,Fujifilm,APS-C,40,7728x5152,6K,1799,X-Mount
+Fujifilm X-H2S,Fujifilm,APS-C,26,6240x4160,6K,2499,X-Mount
+Fujifilm GFX 50S II,Fujifilm,Medium Format,51,8256x6192,4K,3999,G-Mount
+Lumix S5,Lumix,Full Frame,24,6000x4000,4K,1697,L-Mount
+Lumix GH6,Lumix,Micro Four Thirds,25,5776x4336,5.7K,2199,L-Mount
+Lumix S1,Lumix,Full Frame,24,6000x4000,4K,2499,L-Mount
+Lumix S1H,Lumix,Full Frame,24,6000x4000,6K,3499,L-Mount
+Lumix G9,Lumix,Micro Four Thirds,20,5184x3888,4K,1099,L-Mount
+Leica SL2,Leica,Full Frame,47,8368x5584,5K,6295,M-Mount
+Leica M11,Leica,Full Frame,60,9520x6328,4K,8995,M-Mount
+Leica Q2,Leica,Full Frame,47,8368x5584,4K,4995,M-Mount
+Leica TL2,Leica,APS-C,24,6016x4014,4K,2250,M-Mount
+Leica CL,Leica,APS-C,24,6016x4014,4K,2795,M-Mount

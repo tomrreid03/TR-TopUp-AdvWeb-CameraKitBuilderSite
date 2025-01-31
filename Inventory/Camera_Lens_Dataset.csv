@@ -1,0 +1,33 @@
+Model,Brand,Mount,Price ($),Type,Lens Type,Max Aperture,Filter Thread Size
+Canon RF 50mm f/1.2L,Canon,RF-Mount,2299,Prime,Standard,f/1.2,72mm
+Canon RF 24-70mm f/2.8L,Canon,RF-Mount,2499,Zoom,Standard Zoom,f/2.8,82mm
+Canon RF 70-200mm f/2.8L,Canon,RF-Mount,2799,Zoom,Telephoto,f/2.8,77mm
+Canon RF 15-35mm f/2.8L,Canon,RF-Mount,2399,Zoom,Wide Zoom,f/2.8,82mm
+Canon RF 85mm f/1.2L,Canon,RF-Mount,2699,Prime,Short Telephoto,f/1.2,77mm
+Canon RF-S 18-45mm f/4.5-6.3 IS STM,Canon,RF-S-Mount,299,Zoom,Standard Zoom,f/4.5-6.3,49mm
+Canon RF-S 55-210mm f/5-7.1 IS STM,Canon,RF-S-Mount,349,Zoom,Telephoto,f/5-7.1,55mm
+Sony FE 35mm f/1.4 GM,Sony,L-Mount,1399,Prime,Wide,f/1.4,67mm
+Sony FE 50mm f/1.2 GM,Sony,L-Mount,1999,Prime,Standard,f/1.2,72mm
+Sony FE 24-70mm f/2.8 GM II,Sony,L-Mount,2298,Zoom,Standard Zoom,f/2.8,82mm
+Sony FE 70-200mm f/2.8 GM OSS II,Sony,L-Mount,2798,Zoom,Telephoto,f/2.8,77mm
+Sony FE 16-35mm f/2.8 GM,Sony,L-Mount,2398,Zoom,Wide Zoom,f/2.8,82mm
+Nikon Z 50mm f/1.2 S,Nikon,Z-Mount,2099,Prime,Standard,f/1.2,82mm
+Nikon Z 24-70mm f/2.8 S,Nikon,Z-Mount,2299,Zoom,Standard Zoom,f/2.8,82mm
+Nikon Z 70-200mm f/2.8 VR S,Nikon,Z-Mount,2599,Zoom,Telephoto,f/2.8,77mm
+Nikon Z 14-30mm f/4 S,Nikon,Z-Mount,1299,Zoom,Wide Zoom,f/4,82mm
+Nikon Z 85mm f/1.8 S,Nikon,Z-Mount,799,Prime,Short Telephoto,f/1.8,67mm
+Fujifilm XF 35mm f/1.4 R,Fujifilm,X-Mount,599,Prime,Standard,f/1.4,52mm
+Fujifilm XF 16-55mm f/2.8 R LM WR,Fujifilm,X-Mount,1199,Zoom,Standard Zoom,f/2.8,77mm
+Fujifilm XF 50-140mm f/2.8 R OIS WR,Fujifilm,X-Mount,1599,Zoom,Telephoto,f/2.8,72mm
+Fujifilm XF 8-16mm f/2.8 R LM WR,Fujifilm,X-Mount,1999,Zoom,Wide Zoom,f/2.8,82mm
+Fujifilm GF 110mm f/2 R LM WR,Fujifilm,G-Mount,2799,Prime,Short Telephoto,f/2,77mm
+Fujifilm GF 23mm f/4 R LM WR,Fujifilm,G-Mount,2599,Prime,Wide,f/4,82mm
+Fujifilm GF 32-64mm f/4 R LM WR,Fujifilm,G-Mount,2299,Zoom,Standard Zoom,f/4,77mm
+Lumix S Pro 50mm f/1.4,Lumix,L-Mount,2299,Prime,Standard,f/1.4,77mm
+Lumix S 24-105mm f/4 Macro OIS,Lumix,L-Mount,1299,Zoom,Standard Zoom,f/4,77mm
+Lumix S Pro 70-200mm f/2.8 OIS,Lumix,L-Mount,2599,Zoom,Telephoto,f/2.8,82mm
+Lumix S 16-35mm f/4,Lumix,L-Mount,1499,Zoom,Wide Zoom,f/4,77mm
+Leica Summilux-M 50mm f/1.4,Leica,M-Mount,4395,Prime,Standard,f/1.4,46mm
+Leica Summicron-M 35mm f/2,Leica,M-Mount,2995,Prime,Wide,f/2,39mm
+Leica Noctilux-M 50mm f/0.95,Leica,M-Mount,12995,Prime,Standard,f/0.95,60mm
+Leica Apo-Summicron-M 90mm f/2,Leica,M-Mount,4995,Prime,Short Telephoto,f/2,55mm

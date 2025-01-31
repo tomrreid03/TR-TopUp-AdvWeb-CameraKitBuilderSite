@@ -1,0 +1,18 @@
+CameraName,Brand,Price,SensorSize,SensorMegapixels,StillsResolution,VideoResolution,LensMountType,Weight
+Canon EOS R5,Canon,3799,Full Frame,45,8K,8K,RF,738
+Canon EOS R6 II,Canon,2499,Full Frame,24,4K,4K,RF,670
+Canon EOS R7,Canon,1699,APS-C,32.5,4K,4K,RF,612
+Canon EOS R50,Canon,789,APS-C,24.2,4K,4K,RF-S,375
+Lumix S5 II,Lumix,1999,Full Frame,24.2,4K,4K,L,740
+Lumix GH6,Lumix,1999,Micro Four Thirds,25.2,4K,4K,M,823
+Sony A7 IV,Sony,2499,Full Frame,33,4K,4K,E,658
+Sony A7R V,Sony,3799,Full Frame,61,8K,8K,E,723
+Sony A6700,Sony,1399,APS-C,26,4K,4K,E,493
+Fujifilm X-T5,Fujifilm,1699,APS-C,40.2,4K,4K,X,557
+Fujifilm X-H2S,Fujifilm,2499,APS-C,26.1,4K,4K,X,660
+Fujifilm GFX100S,Fujifilm,5999,Medium Format,102,4K,4K,G,900
+Nikon Z8,Nikon,3999,Full Frame,45.7,8K,8K,Z,910
+Nikon Z6 II,Nikon,1999,Full Frame,24.5,4K,4K,Z,705
+Nikon Zf,Nikon,1999,Full Frame,24.5,4K,4K,Z,710
+Leica SL3,Leica,6995,Full Frame,60.3,8K,8K,L,840
+Leica M11,Leica,8995,Full Frame,60.3,4K,4K,M,640 
